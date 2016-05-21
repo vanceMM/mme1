@@ -168,6 +168,9 @@ header a {
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
 				}
+				header    #search_input {
+					margin-top: auto;
+				}
 
 
 /**** SECTION ****/
