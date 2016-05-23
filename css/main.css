@@ -328,6 +328,87 @@ main {
 			.image.featured img {
 				width: 100%;
 			}
+/**** MODAL ***/
+
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes example {
+	from {top:-100px;opacity: 0;}
+	to {top:0px;opacity:1;}
+}
+
+/* Add animation (Standard syntax) */
+@keyframes example {
+	from {top:-100px;opacity: 0;}
+	to {top:0px;opacity:1;}
+}
+
+/* The modal's background */
+.modal {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1000000000;
+}
+
+/* Display the modal when targeted */
+.modal:target {
+	display: table;
+	position: absolute;
+}
+
+/* The modal box */
+.modal-dialog {
+	display: table-cell;
+	vertical-align: middle;
+	z-index: -1000;
+}
+
+/* The modal's content */
+.modal-dialog .modal-content {
+	hight: 50vw;
+	margin: auto;
+	background-color: #f3f3f3;
+	position: relative;
+	padding: 2em;
+	outline: 0;
+	border: 1px #777 solid;
+	text-align: justify;
+	width: 50vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	/* Add animation */
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+	animation-name: example;
+	animation-duration: 0.5s;
+}
+
+/* The button used to close the modal */
+#closebtn {
+	float: right;
+	right: 2em;
+	top: 2em;
+}
+
+#closebtnclosebtn:hover,
+#closebtn:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.container {
+	background: #ffffff;
+	padding: 2px 16px;
+	width: 50vw;
+}
+
 
 /**** FORM ****/
 
@@ -366,6 +447,7 @@ textarea {
 }
 
 
+
 /**** TABLE ****/
 
 .demo-content {
@@ -384,7 +466,6 @@ textarea {
     padding:5px;
 }
 
-#goo
 
 /* ICON */
 
