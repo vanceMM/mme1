@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/testdata.js"></script>
 </head>
 <body>
   <!-- Main-Container -->
@@ -15,7 +16,7 @@
     <h1><a href="#">Secret Places</a></h1>
     <nav class="links">
       <ul>
-        <li><a href="#">Add New</a></li>
+        <li><a href="#add_form">Add New</a></li>
         <li><a href="#">Recent</a></li>
         <li><a href="#">Popular</a></li>
         <li><a href="#">Login</a></li>
@@ -125,6 +126,40 @@
         </article>
     </section>
   </aside>
+      <div id="add_form" class="modal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <a href="#" id="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
+                  <h1>Add a new Place</h1>
+
+                  <form action="form_response.php" method="post">
+                      <fieldset>
+
+                          Typ:
+                          <input type="checkbox" name="restaurant"> Restaurant
+                          <input type="checkbox" name="bar"> Bar
+                          <input type="checkbox" name="location"> Location
+                          <br>
+                          Title
+                          <input type="text" name="title" size="10" maxlength="30" required>
+                          <br>
+                          Description:
+                          <input id="description" type="text" name="description" size="15" maxlength="200" required>
+                          <br>
+                          Adresse:
+                          <input type="text" name="Adresse" placeholder="Adresse">
+                          <br>
+                          Price Range:
+                          <input type="radio" name="price" value="cheap" > $
+                          <input type="radio" name="price" value="affordable" > $$
+                          <input type="radio" name="price" value="expensive" > $$$
+                          <br>
+                      </fieldset>
+                  </form>
+
+              </div>
+          </div>
+      </div>
   </div>
 </body>
 <footer id="main-footer">
