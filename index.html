@@ -162,13 +162,13 @@
                   <a href="#" id="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
                   <h1>Add a new Place</h1>
 
-                  <form action="form_response.php" method="post">
+                  <form id="add-form" action="form_response.php" method="post">
                       <fieldset>
 
                           Typ:
-                          <input type="checkbox" name="restaurant" class="checkboxes"> Restaurant
-                          <input type="checkbox" name="bar" class="checkboxes"> Bar
-                          <input type="checkbox" name="location" class="checkboxes"> Location
+                          <input type="checkbox" id="restaurant" name="restaurant" class="checkboxes"> Restaurant
+                          <input type="checkbox" id="bar" name="bar" class="checkboxes"> Bar
+                          <input type="checkbox" id="location" name="location" class="checkboxes"> Location
                           <br>
                           Title
                           <input type="text" name="title" size="10" maxlength="30" required>
@@ -177,16 +177,16 @@
                           <input id="description" type="text" name="description" size="15" maxlength="200" required>
                           <br>
                           Adresse:
-                          <input type="text" name="Adresse" placeholder="Adresse">
+                          <input type="text" name="adress" placeholder="Adresse">
                           <br>
                           Price Range:
-                          <input type="radio" name="price" value="cheap" required > $
-                          <input type="radio" name="price" value="affordable" > $$
-                          <input type="radio" name="price" value="expensive" > $$$
+                          <input type="radio" name="price" value="1" required > $
+                          <input type="radio" name="price" value="2" > $$
+                          <input type="radio" name="price" value="3" > $$$
                           <br>
                       </fieldset>
                   </form>
-
+                  <button id="test_button">TEST</button>
               </div>
           </div>
       </div>
