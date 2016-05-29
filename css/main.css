@@ -163,7 +163,7 @@ header a {
 				header .links ul li a {
 					border-bottom: 0;
 					font-family: "Raleway", Helvetica, sans-serif;
-					font-size: 0.7em;
+					font-size: 1.0em;
 					font-weight: 400;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
@@ -408,6 +408,7 @@ main {
 	padding: 2px 16px;
 	width: 50vw;
 }
+
 
 
 /**** FORM ****/
@@ -688,6 +689,10 @@ ul.icons li > * .label {
 /**** FOOTER ****/
 
 #main-footer .icons {
+	
+	margin-left: 2.5em;
+	margin-bottom: 1.5em;
+	overflow: hidden;
     color: #aaaaaa;
 }
 /**** Container ****/
