@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script type="text/javascript" src="js/testdata.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
 </head>
 <body>
   <!-- Main-Container -->
@@ -164,29 +166,33 @@
 
                   <form id="add-form" action="form_response.php" method="post">
                       <fieldset>
-
-                          Typ:
-                          <input type="checkbox" id="restaurant" name="restaurant" class="checkboxes"> Restaurant
-                          <input type="checkbox" id="bar" name="bar" class="checkboxes"> Bar
-                          <input type="checkbox" id="location" name="location" class="checkboxes"> Location
+                          <input type="checkbox" id="restaurant" name="restaurant" class="checkboxes"><label for="restaurant">
+                          <i class="fa fa-cutlery fa-5x" aria-hidden="true"></i>
+                      </label>
+                          <input type="checkbox" id="bar" name="bar" class="checkboxes"><label for="bar">
+                          <i class="fa fa-glass fa-5x" aria-hidden="true"></i>
+                      </label>
+                          <input type="checkbox" id="location" name="location" class="checkboxes"><label for="location">
+                          <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+                      </label>
                           <br>
                           Title
                           <input type="text" name="title" size="10" maxlength="30" required>
-                          <br>
                           Description:
                           <input id="description" type="text" name="description" size="15" maxlength="200" required>
-                          <br>
                           Adresse:
                           <input type="text" name="adress" placeholder="Adresse">
-                          <br>
                           Price Range:
                           <input type="radio" name="price" value="1" required > $
                           <input type="radio" name="price" value="2" > $$
                           <input type="radio" name="price" value="3" > $$$
                           <br>
+                          <div id="googleMap" class="modal-dialog modal-content modal"></div>
+                          <br>
+                          <button type="submit" class="button">Submit</button>
+                          <button type="button" id="test_button" class="button">TEST</button>
                       </fieldset>
                   </form>
-                  <button id="test_button">TEST</button>
               </div>
           </div>
       </div>
