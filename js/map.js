@@ -15,9 +15,18 @@ function initialize()
 
     map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-    google.maps.event.addListener(map, 'click', function(event) {
-        placeMarker(event.latLng);
-    });
+    document.getElementById("location").addEventListener('change', changeHandler );
+
+    function changeHandler() {
+        if(document.getElementById("location").checked) {
+            var markerListener = google.maps.event.addListener(map, 'click', function (event) {
+                placeMarker(event.latLng);
+            });
+        } else {
+            google.maps.event.removeListener(markerListener);
+        }
+    }
+
 }
 
 function placeMarker(location) {

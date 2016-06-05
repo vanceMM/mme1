@@ -9,6 +9,7 @@
   <script type="text/javascript" src="js/testdata.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
 </head>
 <body>
   <!-- Main-Container -->
@@ -164,9 +165,9 @@
                   <a href="#" id="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
                   <h1>Add a new Place</h1>
 
-                  <form id="add-form" action="form_response.php" method="post">
+                  <form id="add-form" name="add-form" action="form_response.php" method="post">
                       <fieldset>
-                          <input type="checkbox" id="restaurant" name="restaurant" class="checkboxes"><label for="restaurant">
+                          <input type="checkbox" id="restaurant" name="restaurant" class="checkboxes" ><label for="restaurant">
                           <i class="fa fa-cutlery fa-5x" aria-hidden="true"></i>
                       </label>
                           <input type="checkbox" id="bar" name="bar" class="checkboxes"><label for="bar">
@@ -177,11 +178,20 @@
                       </label>
                           <br>
                           Title
-                          <input type="text" name="title" size="10" maxlength="30" required>
+                          <div class="tooltip right-inner-addon input-container">
+                              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                              <input type="text" name="title" class="textfield" size="10" maxlength="30" placeholder="Type in a title" required>
+                          </div>
                           Description:
-                          <input id="description" type="text" name="description" size="15" maxlength="200" required>
+                          <div class="tooltip right-inner-addon input-container">
+                              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                              <input id="description" type="text" name="description" class="textfield" placeholder="Type in a description" size="15" maxlength="200" required>
+                              </div>
                           Adresse:
-                          <input type="text" name="adress" placeholder="Adresse">
+                          <div class="tooltip right-inner-addon input-container">
+                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                <input type="text" name="adress" class="textfield" placeholder="type in a valid adress">
+                              </div>
                           Price Range:
                           <input type="radio" name="price" value="1" required > $
                           <input type="radio" name="price" value="2" > $$
@@ -189,7 +199,7 @@
                           <br>
                           <div id="googleMap" class="modal-dialog modal-content modal"></div>
                           <br>
-                          <button type="submit" class="button">Submit</button>
+                          <button type="submit" id="submit_button" class="button">Submit</button>
                           <button type="button" id="test_button" class="button">TEST</button>
                       </fieldset>
                   </form>

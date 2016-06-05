@@ -463,7 +463,56 @@ input[type=checkbox].checkboxes:checked  + label .fa {
 	height: 20vw;
 }
 
+.right-inner-addon {
+	position: relative;
+}
+.right-inner-addon input {
+	padding-right: 35px !important;
+}
+.right-inner-addon i {
+	position: absolute;
+	right: 0px;
+	padding: 12px 12px;
+	pointer-events: none;
+}
 
+.right-inner-addon-b {
+	position: relative;
+}
+.right-inner-addon-b input {
+	padding-right: 35px !important;
+}
+.right-inner-addon-b i {
+	position: absolute;
+	right: 0px;
+	padding: 9px 12px;
+	pointer-events: none;
+}
+i.fa-exclamation-triangle {
+	visibility: hidden;
+}
+
+/* Tooltip container */
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
 
 /*** BUTTON ***/
 
@@ -688,6 +737,11 @@ ul.icons li > * .label {
 /**** FOOTER ****/
 
 #main-footer .icons {
+
+	margin-left: 2.5em;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+
     color: #aaaaaa;
 }
 /**** Container ****/
