@@ -4,16 +4,18 @@
   <meta charset="utf-8" />
   <title>mme1_webpage</title>
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script type="text/javascript" src="js/testdata.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/testdata.js"></script>
+    <script type="text/javascript" src="js/falsetestdata.js"></script>
     <script type="text/javascript" src="js/validate.js"></script>
 </head>
 <body>
   <!-- Main-Container -->
-  <div id="wrapper">
+  <div class="wrapper">
   <!-- semantic navbar -->
   <header>
     <h1><a href="#">Secret Places</a></h1>
@@ -28,7 +30,7 @@
       </ul>
     </nav>
   </header>
-  <main id="main">
+  <main class="main">
       <article class="post">
         <a href="#" class="image featured">
           <img src="images/pic1.jpeg" alt>
@@ -176,6 +178,7 @@
                           <input type="checkbox" id="location" name="location" class="checkboxes"><label for="location">
                           <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
                       </label>
+                          <div id="checkbox_warning"></div>
                           <br>
                           Title
                           <div class="tooltip right-inner-addon input-container">
@@ -201,6 +204,7 @@
                           <br>
                           <button type="submit" id="submit_button" class="button">Submit</button>
                           <button type="button" id="test_button" class="button">TEST</button>
+                          <button type="button" id="false_test_button" class="button">TEST_FALSE</button>
                       </fieldset>
                   </form>
               </div>

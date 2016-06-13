@@ -15,10 +15,20 @@ function init() {
     var fields = document.getElementsByClassName("textfield");
     for(var i=0; i<fields.length; i++){
         fields[i].addEventListener("focusout", validateText);
+        fields[i].addEventListener("keydown", validateText);
 
     }
     document.getElementById("test_button").addEventListener("click", removeHint);
     document.forms["add-form"]["adress"].addEventListener("focusout", validateAdress);
+    document.getElementById("false_test_button").addEventListener("click", function () {
+        fForm();
+        validateClick()
+    });
+    document.getElementById("test_button").addEventListener("click", validate);
+    var checkboxes = document.getElementsByClassName("checkboxes");
+    for (var i=0; i<checkboxes.length; i++){
+        checkboxes[i].addEventListener("click", validateCheckbox);
+    }
 
 }
 
@@ -38,6 +48,8 @@ function validateAdress() {
     if(!re.test(adress.value)) {
         adress.previousElementSibling.style.visibility = "visible";
         adress.previousElementSibling.innerHTML = '<span class="tooltiptext">Please type in a valid adress</span>';
+    } if(re.test(adress.value)) {
+        adress.previousElementSibling.innerHTML = "";
     }
 
 }
@@ -49,15 +61,57 @@ function removeHint() {
         fields[i].style.visibility.innerHTML = "";
     }
 }
-function validate() {
-    
+function validateCheckbox() {
+
+    //check if checkboxes is selected(at least one)
     var checkboxes = document.getElementsByClassName("checkboxes");
-    checkboxes.forEach(function (item) {
-        if(item.checked == true) {
-            return true
-        } else {
-            console.log("none selected");
-            false;
-        }
-    })
+    if(checkboxes[0].checked === false && checkboxes[1].checked === false && checkboxes[2].checked === false ) {
+        document.getElementById("checkbox_warning").innerHTML='<span>No Category selected! Please select at least one!</span>';
+    } else {
+        document.getElementById("checkbox_warning").innerHTML="";
+    }
+}
+
+function validate() {
+    console.log("validate called");
+    validateText();
+    validateAdress();
+    validateCheckbox();
+}
+
+function validateClick() {
+    //test for title
+    var title = document.forms["add-form"]["title"];
+    if (title.value == "") {
+        title.previousElementSibling.style.visibility = "visible";
+        title.previousElementSibling.innerHTML = '<span class="tooltiptext">Please type in a '+ title.name +'</span>';
+    } if (title.value.length > 0 ) {
+        title.previousElementSibling.style.visibility = "hidden";
+        title.previousElementSibling.innerHTML = "";
+    }
+    //test for description
+    var description = document.forms["add-form"]["description"];
+    if (description.value == "") {
+        description.previousElementSibling.style.visibility = "visible";
+        description.previousElementSibling.innerHTML = '<span class="tooltiptext">Please type in a '+ description.name +'</span>';
+    } if (description.value.length > 0 ) {
+        description.previousElementSibling.style.visibility = "hidden";
+        description.previousElementSibling.innerHTML = "";
+    }
+    //test for adress
+    var adress = document.forms["add-form"]["adress"];
+    if (adress.value == "") {
+        adress.previousElementSibling.style.visibility = "visible";
+        adress.previousElementSibling.innerHTML = '<span class="tooltiptext">Please type in a '+ adress.name +'</span>';
+    } if (adress.value.length > 0 ) {
+        adress.previousElementSibling.style.visibility = "hidden";
+        adress.previousElementSibling.innerHTML = "";
+    }
+    //check for checkboxes selected
+    var checkboxes = document.getElementsByClassName("checkboxes");
+    if(checkboxes[0].checked === false && checkboxes[1].checked === false && checkboxes[2].checked === false ) {
+        document.getElementById("checkbox_warning").innerHTML='<span>No Category selected! Please select at least one!</span>';
+    }
+    validateCheckbox();
+
 }

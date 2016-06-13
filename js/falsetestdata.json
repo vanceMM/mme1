@@ -1,0 +1,34 @@
+{
+    "falsetestdata": [
+        {
+
+                "typ": {
+                    "restaurant": true,
+                    "bar": true,
+                    "location": true
+                },
+                "description": "Boogie's Diner is a nice place for the whole family. They have tasty burgers and lovely milkshakes.",
+                "adresse": "Warschauererstraße 15 10249 Berlin",
+                
+            },
+            {
+                "typ": {
+                    "restaurant": false,
+                    "bar": false,
+                    "location": false
+                },
+                "title": "Treptower Park",
+                
+            },
+            {
+                "typ": {
+                    "restaurant": false,
+                    "bar": true,
+                    "location": false
+                },
+                "title": "FairyTale",
+                "description": "Fairytale is a nice little enchanting bar near Volkspark Friedrichshain.",
+                "adresse": "Rosengarten 12435 Berlin",
+        }
+    ]
+}
