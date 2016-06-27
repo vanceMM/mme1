@@ -1,0 +1,45 @@
+@import "../0-tools/bourbon/bourbon";
+@import "../0-tools/neat/neat";
+
+$small-screen: new-breakpoint(min-width 400px);
+$tablet: new-breakpoint(min-width 768px);
+$desktop: new-breakpoint(min-width 1025px);
+
+.wrapper {
+  @include outer-container();
+}
+
+#sidebar {
+  @include media($small-screen) {
+    @include span-columns(0);
+    display: none;
+  }
+  @include media($tablet) {
+    @include span-columns(3);
+    @include pad();
+  }
+  @include media($desktop) {
+    @include span-columns(4);
+
+  }
+}
+.main {
+
+  @include media($tablet) {
+    @include span-columns(9);
+    @include pad();
+    .post article{
+      display: none;
+    }
+
+  }
+  @include media($desktop) {
+    @include span-columns(7);
+    @include pad();
+    .post article{
+      display: block;
+    }
+
+  }
+}
+

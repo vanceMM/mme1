@@ -12,24 +12,104 @@
     <script type="text/javascript" src="js/testdata.js"></script>
     <script type="text/javascript" src="js/falsetestdata.js"></script>
     <script type="text/javascript" src="js/validate.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/menu_toggle.js"></script>
 </head>
 <body>
   <!-- Main-Container -->
   <div class="wrapper">
   <!-- semantic navbar -->
-  <header>
-    <h1><a href="#">Secret Places</a></h1>
-    <nav class="links">
-      <ul>
-        <li><a href="#add_form">Add New</a></li>
-        <li><a href="#">Recent</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Help</a></li>
-        <li id="search_input"> <input type="text" name="query" placeholder="Search"></li>
-      </ul>
-    </nav>
-  </header>
+      <header class="navigation" role="banner">
+          <div class="navigation-wrapper">
+              <a href="javascript:void(0)" class="logo">
+                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo Image">
+              </a>
+              <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+              <nav role="navigation">
+                  <ul id="js-navigation-menu" class="navigation-menu show">
+                      <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                      <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+                      <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+                      <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">More</a>
+                          <ul class="submenu">
+                              <li><a href="javascript:void(0)">Submenu Item</a></li>
+                              <li><a href="javascript:void(0)">Another Item</a></li>
+                              <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+                                  <ul class="submenu">
+                                      <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                                      <li><a href="javascript:void(0)">Another Item</a></li>
+                                  </ul>
+                              </li>
+                              <li class="more"><a href="javascript:void(0)">Another submenu</a>
+                                  <ul class="submenu">
+                                      <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                                      <li><a href="javascript:void(0)">An Item</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </nav>
+              <div class="navigation-tools">
+                  <div class="search-bar">
+                      <form role="search">
+                          <input type="search" placeholder="Enter Search" />
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <div class="row">
+      <aside id="sidebar">
+          <section>
+              <article class="mini-post">
+                  <ul class="tag-cloud">
+                      <li class="tag-item">Café</li>
+                      <li class="tag-item">Restaurant</li>
+                      <li class="tag-item">Location</li>
+                      <li class="tag-item">Club</li>
+                      <li class="tag-item">Urban</li>
+                  </ul>
+              </article>
+          </section>
+          <section>
+              <article class="mini-posts">
+                  <a href="#" class="image featured">
+                      <img src="images/pic4.jpeg" alt>
+                  </a>
+              </article>
+              <article class="mini-posts">
+                  <a href="#" class="image featured">
+                      <img src="images/pic5.jpeg" alt>
+                  </a>
+              </article>
+              <article class="mini-posts">
+                  <a href="#" class="image featured">
+                      <img src="images/pic6.jpeg" alt>
+                  </a>
+              </article>
+              <article class="mini-posts">
+                  <a href="#" class="image featured">
+                      <img src="images/pic7.jpeg" alt>
+                  </a>
+              </article>
+              <article class="mini-posts">
+                  <a href="#" class="image featured">
+                      <img src="images/pic8.jpeg" alt>
+                  </a>
+              </article>
+              <article class="mini-posts">
+                  <a href="#" class="image featured">
+                      <img src="images/pic9.jpeg" alt>
+                  </a>
+              </article>
+              <article class="mini-posts">
+                  <a href="#" class="image featured">
+                      <img src="images/pic10.jpeg" alt>
+                  </a>
+              </article>
+          </section>
+      </aside>
   <main class="main">
       <article class="post">
         <a href="#" class="image featured">
@@ -111,56 +191,7 @@
         </a>
       </article>
   </main>
-  <aside id="sidebar">
-      <section>
-        <article class="mini-post">
-          <ul class="tag-cloud">
-              <li class="tag-item">Café</li>
-              <li class="tag-item">Restaurant</li>
-              <li class="tag-item">Location</li>
-              <li class="tag-item">Club</li>
-              <li class="tag-item">Urban</li>
-          </ul>
-        </article>
-      </section>
-      <section>
-      <article class="mini-posts">
-          <a href="#" class="image featured">
-              <img src="images/pic4.jpeg" alt>
-          </a>
-      </article>
-        <article class="mini-posts">
-            <a href="#" class="image featured">
-                <img src="images/pic5.jpeg" alt>
-            </a>
-        </article>
-        <article class="mini-posts">
-            <a href="#" class="image featured">
-                <img src="images/pic6.jpeg" alt>
-            </a>
-        </article>
-          <article class="mini-posts">
-              <a href="#" class="image featured">
-                  <img src="images/pic7.jpeg" alt>
-              </a>
-          </article>
-          <article class="mini-posts">
-              <a href="#" class="image featured">
-                  <img src="images/pic8.jpeg" alt>
-              </a>
-          </article>
-          <article class="mini-posts">
-              <a href="#" class="image featured">
-                  <img src="images/pic9.jpeg" alt>
-              </a>
-          </article>
-          <article class="mini-posts">
-              <a href="#" class="image featured">
-                  <img src="images/pic10.jpeg" alt>
-              </a>
-          </article>
-    </section>
-  </aside>
+          </div>
       <div id="add_form" class="modal">
           <div class="modal-dialog">
               <div class="modal-content">
@@ -212,7 +243,7 @@
       </div>
   </div>
 </body>
-<footer id="main-footer">
+<!--<footer id="main-footer">
   <ul class="icons">
     <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
     <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
@@ -221,5 +252,34 @@
     <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
     <h1>Copyright by Valentin Risch & Marc Duttlinger </h1>
   </ul>
+</footer>-->
+<footer class="footer" role="contentinfo">
+    <div class="footer-logo">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><h3>Content</h3></li>
+            <li><a href="javascript:void(0)">About</a></li>
+            <li><a href="javascript:void(0)">Contact</a></li>
+            <li><a href="javascript:void(0)">Products</a></li>
+        </ul>
+        <ul>
+            <li><h3>Follow Us</h3></li>
+            <li><a href="javascript:void(0)">Facebook</a></li>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="javascript:void(0)">YouTube</a></li>
+        </ul>
+        <ul>
+            <li><h3>Legal</h3></li>
+            <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
 </footer>
+
 </html>
