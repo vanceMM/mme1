@@ -350,7 +350,7 @@ body:before {
     float: left;
     display: block;
     margin-right: 0.84034%;
-    width: 74.78992%;
+    width: 66.38655%;
     padding: 0.84034%;
   }
   .main:last-child {
@@ -869,6 +869,198 @@ body:before {
   text-align: center;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  opacity: 0.1;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+@media screen and (min-width: 400px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .modal-dialog {
+    float: left;
+    display: block;
+    margin-right: 0.84034%;
+    width: 100%;
+  }
+  .modal-dialog:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    float: left;
+    display: block;
+    margin-right: 0.84034%;
+    width: 83.19328%;
+    margin-left: 8.40336%;
+  }
+  .modal-dialog:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .modal-dialog {
+    float: left;
+    display: block;
+    margin-right: 0.84034%;
+    width: 66.38655%;
+    margin-left: 16.80672%;
+  }
+  .modal-dialog:last-child {
+    margin-right: 0;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  opacity: 0.1;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+@media screen and (min-width: 400px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -moz-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -ms-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: -o-linear-gradient(left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, red 0, red 7.56303%, transparent 7.56303%, transparent 8.40336%, red 8.40336%, red 15.96639%, transparent 15.96639%, transparent 16.80672%, red 16.80672%, red 24.36975%, transparent 24.36975%, transparent 25.21008%, red 25.21008%, red 32.77311%, transparent 32.77311%, transparent 33.61345%, red 33.61345%, red 41.17647%, transparent 41.17647%, transparent 42.01681%, red 42.01681%, red 49.57983%, transparent 49.57983%, transparent 50.42017%, red 50.42017%, red 57.98319%, transparent 57.98319%, transparent 58.82353%, red 58.82353%, red 66.38655%, transparent 66.38655%, transparent 67.22689%, red 67.22689%, red 74.78992%, transparent 74.78992%, transparent 75.63025%, red 75.63025%, red 83.19328%, transparent 83.19328%, transparent 84.03361%, red 84.03361%, red 91.59664%, transparent 91.59664%, transparent 92.43697%, red 92.43697%, red 100%, transparent 100%);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .table {
+    float: left;
+    display: block;
+    margin-right: 0.84034%;
+    width: 100%;
+  }
+  .table:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .table {
+    float: left;
+    display: block;
+    margin-right: 0.84034%;
+    width: 83.19328%;
+    margin-left: 8.40336%;
+  }
+  .table:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .table {
+    float: left;
+    display: block;
+    margin-right: 0.84034%;
+    width: 66.38655%;
+    margin-left: 16.80672%;
+  }
+  .table:last-child {
+    margin-right: 0;
+  }
+}
+
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -881,6 +1073,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
+}
+
+button {
+  border: 0px none;
+  background-color: transparent;
+}
+
+button:hover {
+  box-shadow: none;
+  color: transparent;
 }
 
 body {
@@ -935,6 +1137,32 @@ body, input, select, textarea {
   font-size: 14pt;
   font-weight: 400;
   line-height: 1.75;
+}
+
+/**** Heading with Line ****/
+h2.background {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+h2::before {
+  border-top: 2px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+h2 span {
+  background: #fff;
+  padding: 0 10px;
 }
 
 /**** WRAPPER ****/
@@ -1129,7 +1357,6 @@ body {
 }
 
 .modal-dialog .modal-content {
-  hight: 50vw;
   margin: auto;
   background-color: #f3f3f3;
   position: relative;
@@ -1137,7 +1364,6 @@ body {
   outline: 0;
   border: 1px #777 solid;
   text-align: justify;
-  width: 50vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* Add animation */
   -webkit-animation-name: example;
@@ -1214,7 +1440,6 @@ input[type=checkbox].checkboxes:checked + label .fa {
 
 #googleMap {
   z-index: 100000000000000;
-  height: 20vw;
 }
 
 .right-inner-addon {
@@ -1300,7 +1525,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   white-space: nowrap;
 }
 
-button, .button {
+.button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -1334,8 +1559,8 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 }
 
 button:hover, .button:hover {
-  box-shadow: inset 0 0 0 1px #2ebaae;
-  color: #2ebaae !important;
+  /* box-shadow: inset 0 0 0 1px #2ebaae;
+  color: #2ebaae !important;*/
 }
 
 input[type="submit"]:hover:active, input[type="reset"]:hover:active, input[type="button"]:hover:active {
@@ -1499,6 +1724,11 @@ button.disabled:before, button:disabled:before {
   padding: 5px;
 }
 
+.crud_button button {
+  background: none;
+  border: none;
+}
+
 /* ICON */
 .icon {
   text-decoration: none;
@@ -1556,6 +1786,32 @@ ul.icons li > *:before {
 
 ul.icons li > * .label {
   display: none;
+}
+
+/**** MAP ****/
+#map_canvas {
+  height: 400px;
+  width: 100%;
+}
+
+#map_canvas img {
+  max-width: none;
+}
+
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0;
+}
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
 }
 
 /**** FOOTER ****/

@@ -1,0 +1,22 @@
+@import "../0-tools/bourbon/bourbon";
+@import "../0-tools/neat/neat";
+
+$small-screen: new-breakpoint(min-width 400px);
+$tablet: new-breakpoint(min-width 768px);
+$desktop: new-breakpoint(min-width 1025px);
+
+.modal-dialog {
+  @include media($small-screen) {
+    @include span-columns(12);
+  }
+  @include media($tablet) {
+    @include span-columns(10);
+    @include shift-in-context(1);
+
+  }
+  @include media($desktop) {
+    @include span-columns(8);
+    @include shift-in-context(2);
+  }
+}
+

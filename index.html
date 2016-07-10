@@ -6,14 +6,15 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="js/testdata.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/testdata.js"></script>
     <script type="text/javascript" src="js/falsetestdata.js"></script>
     <script type="text/javascript" src="js/validate.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/menu_toggle.js"></script>
+    <script type="text/javascript" src="js/eventhandler.js"></script>
+    <script type="text/javascript" src="js/tableHandler.js"></script>
 </head>
 <body>
   <!-- Main-Container -->
@@ -27,7 +28,7 @@
               <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
               <nav role="navigation">
                   <ul id="js-navigation-menu" class="navigation-menu show">
-                      <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                      <li class="nav-link"><a href="#add_form">New</a></li>
                       <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
                       <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
                       <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">More</a>
@@ -131,66 +132,67 @@
         </a>
           <article>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. </article>
       </article>
-      <section id="table-content" class="post">
-        <table class="demo-content","table">
-          <caption>Most Interesting Places</caption>
-          <thead>
-          <tr>
-            <th>Titel</th>
-            <th>Typ</th>
-            <th>Location</th>
-            <th>Visits</th>
-            <th>Rating</th>
-              <th><i class="fa fa-plus" aria-hidden="true"></i>
-              </th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>&nbsp;Burgerbude</td>
-            <td>&nbsp;Restaurant</td>
-            <td>&nbsp;Kreuzberg</td>
-            <td>&nbsp;234</td>
-            <td>&nbsp;5</td>
-              <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-              <td><i class="fa fa-times" aria-hidden="true"></i></td>
-          </tr>
-          <tr>
-            <td>&nbsp;Rooftop</td>
-            <td>&nbsp;Bar</td>
-            <td>&nbsp;Mitte</td>
-            <td>&nbsp;543</td>
-            <td>&nbsp;5</td>
-              <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-              <td><i class="fa fa-times" aria-hidden="true"></i></td>
-          </tr>
-          <tr>
-            <td>&nbsp;Strand</td>
-            <td>&nbsp;Ort</td>
-            <td>&nbsp;Ostsee</td>
-            <td>&nbsp;21</td>
-            <td>&nbsp;5</td>
-              <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-              <td><i class="fa fa-times" aria-hidden="true"></i></td>
-          </tr>
-          <tr>
-            <td>&nbsp;Coffe Shop</td>
-            <td>&nbsp;Café</td>
-            <td>&nbsp;Berlin</td>
-            <td>&nbsp;312</td>
-            <td>&nbsp;5</td>
-            <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-              <td><i class="fa fa-times" aria-hidden="true"></i></td>
-          </tr>
-          </tbody>
-        </table>
-      </section>
-      <article class="map">
-        <a href="#" class="image featured">
-          <img src="images/GoogleMaps.png" alt>
-        </a>
-      </article>
   </main>
+          <section id="table-content" class="table">
+              <h2 class="background"><span>Most Interesting Places</span></h2>
+              <table class="demo-content">
+<!--
+                  <caption>Most Interesting Places</caption>
+-->
+                  <thead>
+                  <tr>
+                      <th>Titel</th>
+                      <th>Typ</th>
+                      <th>Location</th>
+                      <th>Visits</th>
+                      <th>Rating</th>
+                      <th><form action="#add_form"><button type="submit" id="addFormButton" class="crud_button"><i class="fa fa-plus" aria-hidden="true"></i></button></form>
+                      </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>&nbsp;Burgerbude</td>
+                      <td>&nbsp;Restaurant</td>
+                      <td>&nbsp;Kreuzberg</td>
+                      <td>&nbsp;234</td>
+                      <td>&nbsp;5</td>
+                      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                      <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                      <td>&nbsp;Rooftop</td>
+                      <td>&nbsp;Bar</td>
+                      <td>&nbsp;Mitte</td>
+                      <td>&nbsp;543</td>
+                      <td>&nbsp;5</td>
+                      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                      <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                      <td>&nbsp;Strand</td>
+                      <td>&nbsp;Ort</td>
+                      <td>&nbsp;Ostsee</td>
+                      <td>&nbsp;21</td>
+                      <td>&nbsp;5</td>
+                      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                      <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                      <td>&nbsp;Coffe Shop</td>
+                      <td>&nbsp;Café</td>
+                      <td>&nbsp;Berlin</td>
+                      <td>&nbsp;312</td>
+                      <td>&nbsp;5</td>
+                      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                      <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                  </tr>
+                  </tbody>
+                  <!--<div id="table_content"></div>-->
+              </table>
+          </section>
+          <h2 class="background table"><span>Map</span></h2>
+          <div id="map_canvas" ></div>
           </div>
       <div id="add_form" class="modal">
           <div class="modal-dialog">
@@ -242,6 +244,77 @@
           </div>
       </div>
   </div>
+  <!--
+  Add the code below to the bottom of your page, just before the closing </body> tag.
+  Edit myLatlng and the other variables.
+
+  Find syntax for Features that can be styled here:
+
+  https://developers.google.com/maps/documentation/javascript/reference#MapTypeStyleFeatureType
+
+  Or use a service such as:
+
+  http://software.stadtwerk.org/google_maps_colorizr/#
+  http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+  https://developers.google.com/maps/documentation/javascript/tutorial
+  -->
+
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    var bittersMap = (function () {
+      var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
+          mapCenter = new google.maps.LatLng(59.340458, 18.057340),
+          mapCanvas = document.getElementById('map_canvas'),
+          mapOptions = {
+            center: mapCenter,
+            zoom: 13,
+            scrollwheel: false,
+            draggable: true,
+            disableDefaultUI: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          },
+          map = new google.maps.Map(mapCanvas, mapOptions),
+          contentString =
+            '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+            '<div id="bodyContent"'+
+            '<p>Sveavägen 98</p>'+
+            '</div>'+
+            '</div>',
+          infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 300
+          }),
+          marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'thoughtbot (Sweden)'
+          });
+
+      return {
+        init: function () {
+          map.set('styles', [{
+            featureType: 'landscape',
+            elementType: 'geometry',
+            stylers: [
+              { hue: '#ffff00' },
+              { saturation: 30 },
+              { lightness: 10}
+            ]}
+          ]);
+
+          google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map,marker);
+          });
+        }
+      };
+    }());
+
+    bittersMap.init();
+  </script>
 </body>
 <!--<footer id="main-footer">
   <ul class="icons">

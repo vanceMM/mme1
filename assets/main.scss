@@ -21,6 +21,8 @@
 @import "3-layouts/responsive";
 @import "3-layouts/navigation";
 @import "3-layouts/footer";
+@import "3-layouts/form";
+@import "3-layouts/table";
 
 
 /* Reset */
@@ -36,13 +38,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
  aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+ button {
+   border: 0px none;
+   background-color: transparent;
+ }
+ button:hover {
+   box-shadow: none;
+   color: transparent;
+ }
 
 body {
   line-height: 1;
 }
 
 ol, ul {
-  list-style: none;
+  list-style: none
 }
 
 blockquote, q {
@@ -95,6 +105,31 @@ body, input, select, textarea {
   font-size: 14pt;
   font-weight: 400;
   line-height: 1.75;
+}
+
+/**** Heading with Line ****/
+
+h2.background
+{
+  margin-bottom: 2em;
+  margin-top: 2em;
+  position: relative;
+  z-index: 1;
+  text-align:center;
+}
+h2::before
+{
+  border-top: 2px solid #dfdfdf;
+  content:"";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+}
+h2 span
+{
+  background: #fff;
+  padding: 0 10px;
 }
 
 /**** WRAPPER ****/
@@ -298,7 +333,6 @@ body {
   z-index: -1000;
 
   .modal-content {
-    hight: 50vw;
     margin: auto;
     background-color: #f3f3f3;
     position: relative;
@@ -306,7 +340,6 @@ body {
     outline: 0;
     border: 1px #777 solid;
     text-align: justify;
-    width: 50vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     /* Add animation */
@@ -391,7 +424,6 @@ input[type=checkbox].checkboxes:checked + label .fa {
 
 #googleMap {
   z-index: 100000000000000;
-  height: 20vw;
 }
 
 .right-inner-addon {
@@ -484,7 +516,7 @@ input {
   }
 }
 
-button, .button {
+ .button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -520,8 +552,8 @@ input {
 }
 
 button:hover, .button:hover {
-  box-shadow: inset 0 0 0 1px #2ebaae;
-  color: #2ebaae !important;
+ /* box-shadow: inset 0 0 0 1px #2ebaae;
+  color: #2ebaae !important;*/
 }
 
 input {
@@ -734,6 +766,12 @@ button {
   }
 }
 
+.crud_button button{
+  background: none;
+  border: none;
+
+}
+
 /* ICON */
 
 .icon {
@@ -794,6 +832,34 @@ ul.icons {
     }
   }
 }
+
+/**** MAP ****/
+
+#map_canvas {
+  height: 400px;
+  width: 100%;
+}
+
+#map_canvas img {
+  max-width: none; // to prevent UI control bug
+}
+
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0;
+}
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
+}
+
 
 /**** FOOTER ****/
 
